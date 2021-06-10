@@ -1,0 +1,163 @@
+@value colors: "../../colors.module.css";
+@value dark-green-fifty, red-fifty, dark-green, red, dark-gray, mid-gray, blurple, ghost-white from colors;
+@value row-font-size: 18px;
+@value row-line-height: 1.5em;
+@value row-bottom-margin: 5px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.actions > button {
+  margin-right: 15px;
+}
+
+.action > button:last-child {
+  margin-right: 0;
+}
+
+.orderHeader {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: dark-gray;
+  height: 50px;
+  margin-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.orders {
+  background-color: dark-gray;
+  display: flex;
+  padding-top: 5px;
+}
+
+.header {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.orderBookCol {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.orderBookCol.loading {
+  opacity: 0.5;
+}
+
+.rows {
+  min-height: 290px;
+  height: 45vmin;
+}
+
+.bidRow,
+.askRow {
+  font-size: row-font-size;
+  line-height: row-line-height;
+  display: flex;
+  background-repeat: no-repeat;
+  margin-bottom: row-bottom-margin;
+}
+
+.bidPrice {
+  color: green;
+}
+
+.askPrice {
+  color: red;
+}
+
+.bidRow {
+  background-image: linear-gradient(dark-green-fifty, dark-green-fifty);
+  background-position: right;
+}
+
+.askRow {
+  background-image: linear-gradient(red-fifty, red-fifty);
+}
+
+.headerTitle,
+.val {
+  font-size: row-font-size;
+  line-height: row-line-height;
+  margin-right: 15px;
+  min-width: 100px;
+  width: 16vmin;
+  max-width: 150px;
+  text-align: right;
+}
+
+.headerTitle {
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+.val:last-child {
+  margin-right: 0;
+}
+
+.killBtn {
+  composes: button from '../common/common.module.css';
+  background-color: red;
+}
+
+.toggleBtn {
+  composes: button from '../common/common.module.css';
+  background-color: blurple;
+}
+
+.loader {
+  position: absolute;
+  left: calc(50% - 32px);
+  top: calc(40% - 32px);
+}
+
+.disconnectedText {
+  color: red;
+}
+
+.groupDropdown {
+  width: 100px;
+  color: ghost-white;
+}
+
+.groupDropdown * {
+  background-color: dark-gray;
+  color: ghost-white;
+}
+
+:global(.vertical) .container {
+  width: 100%;
+  padding-top: 0;
+}
+
+:global(.vertical) .orders {
+  flex-direction: column;
+  width: 100%;
+}
+
+:global(.vertical) .rows,
+:global(.vertical) .header {
+  padding-right: 4vmin;
+}
+
+:global(.vertical) .val,
+:global(.vertical) .bidRow,
+:global(.vertical) .askRow,
+:global(.vertical) .headerTitle {
+  width: 100%;
+  background-position: left;
+  max-width: 100%;
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@value colors: "./colors.module.css";
+@value mid-gray, ghost-white, dark-gray from colors;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-align: center;
+  color: ghost-white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 7vmin;
+  background-color: dark-gray;
+  margin-bottom: 10vmin;
+  font-weight: bold;
+  color: ghost-white;
+}
+
+:global(.vertical) .header {
+  margin-bottom: 3px;
+}
+
+body {
+  background-color: mid-gray;
+  margin: 0;
+  font-family: monospace;
+}

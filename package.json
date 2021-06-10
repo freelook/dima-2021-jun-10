@@ -1,0 +1,48 @@
+{
+  "name": "order-book",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "",
+  "dependencies": {
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.7",
+    "@types/react-select": "^4.0.15",
+    "@react-hook/window-size": "^3.0.7",
+    "@reduxjs/toolkit": "^1.5.1",
+    "classnames": "^2.3.1",
+    "postcss-hexrgba": "^2.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.0",
+    "react-select": "^4.3.1",
+    "react-use": "^17.2.4",
+    "reselect": "^4.0.0",
+    "typescript": "~4.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react-scripts": "^4.0.3"
+  }
+}

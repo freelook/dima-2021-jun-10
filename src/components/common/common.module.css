@@ -1,0 +1,30 @@
+@value colors: '../../colors.module.css';
+@value dark-gray, ghost-white from colors;
+
+.button {
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: dark-gray;
+  border: none;
+  color: ghost-white;
+  display: flex;
+  align-items: center;
+}
+
+.button > svg {
+  margin-right: 5px;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  opacity: 0.8;
+}
+
+.icon {
+  fill: ghost-white;
+}
