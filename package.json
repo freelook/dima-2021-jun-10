@@ -2,7 +2,7 @@
   "name": "order-book",
   "version": "0.0.1",
   "private": true,
-  "homepage": "",
+  "homepage": "https://github.com/freelook/dima-2021-jun-10",
   "dependencies": {
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
