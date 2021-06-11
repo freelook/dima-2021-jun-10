@@ -3,6 +3,7 @@
 @value row-font-size: 18px;
 @value row-line-height: 1.5em;
 @value row-bottom-margin: 5px;
+@value row-bottom-padding: 5px;
 
 .container {
   display: flex;
@@ -68,7 +69,7 @@
   line-height: row-line-height;
   display: flex;
   background-repeat: no-repeat;
-  margin-bottom: row-bottom-margin;
+  padding-bottom: row-bottom-padding;
 }
 
 .bidPrice {
